@@ -1,15 +1,10 @@
 body{
     background: #E5E5E5;
     width: 1440px;
+    position: relative;
+    margin: 0;
 }
 
-.row{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-areas:
-    "content-area sidebar";
-}
 
 .navigation{
     position: absolute;
@@ -38,12 +33,6 @@ body{
     height: 46px;
 }
 
-.items{
-    width: 450px;
-    height: 80px;
-    display: flex;
-    margin-right: 20px;
-}
 
 .item{
     width: 90px;
@@ -119,19 +108,11 @@ body{
 }
 
 .main{
-    width: 100%;
+    width: 1180px;
+    height: 1826px;
+    position: absolute;
     top: 120px;
-    background-color: skyblue;
-    height: 100%;
+    left: 130px;
+    right: 130px;
 }
 
-.content-area{
-    grid-area: content-area;
-    width: 850px;
-    background-color: skyblue;
-}
-
-.sidebar{
-    grid-area: sidebar;
-    width: 290px;
-}
