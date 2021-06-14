@@ -27,6 +27,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .logo__image {
@@ -62,6 +63,7 @@ body {
   align-items: center;
   border-right: 1px solid #f4f4f4;
   border-left: 1px solid #f4f4f4;
+  box-sizing: border-box;
 }
 
 .search-form__image {
@@ -101,6 +103,7 @@ body {
   width: 90px;
   border-right: 1px solid #f4f4f4;
   border-left: 1px solid #f4f4f4;
+  box-sizing: border-box;
 }
 
 .other__text {
@@ -294,20 +297,20 @@ body {
   color: #181818;
 }
 
-.experience__content {
+.experience-content {
   width: 790px;
   height: 106px;
   display: flex;
 }
 
-.experience__content__image {
+.experience-content__image {
   width: 54px;
   height: 54px;
   margin-top: 2px;
 }
 
 
-.experience__content__title{
+.experience-content__title{
     font-size: 14px;
     line-height: 21px;
     margin-left: 16px;
@@ -336,7 +339,7 @@ body {
   font-family: "Gotham Pro";
 }
 
-.sidebar-top-part{
+.sidebar-top{
     width: 230px;
     box-sizing: border-box;
     display: flex;
@@ -429,4 +432,33 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 25px;
+}
+
+
+.variants{
+  width: 228px;
+  height: 198px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course{
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
+  width: 103px;
+}
+
+.course__image{
+  width: 80px;
+  height: 52px;
+}
+
+.course__name{
+  font-size: 14px;
+  line-height: 17px;
+  color: #181818;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
