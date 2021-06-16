@@ -463,10 +463,14 @@ body {
 }
 
 .statistics {
+  border-top: 1px solid #F4F4F4;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  height: 253px;
+  height: 294px;
   justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .statistics-indicator {
