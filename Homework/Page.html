@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <title>Frontend</title>
   </head>
   <body>
@@ -12,40 +13,89 @@
       <div class="logo">
         <img src="images/Logo.svg" alt="Logo" class="logo__image" />
       </div>
-      <button class="item">
-        <img src="images/rss.svg" alt="Feed" class="item__image" />
-        <div class="item__text">Feed</div>
-      </button>
-      <button class="item">
-        <img src="images/users.svg" alt="Network" class="item__image" />
-        <div class="item__text">Network</div>
-      </button>
-      <button class="item">
-        <img src="images/briefcase.svg" alt="Job" class="item__image" />
-        <div class="item__text">Jobs</div>
-      </button>
-      <button class="item">
-        <img src="images/message-square.svg" alt="Feed" class="item__image" />
-        <div class="item__text">Chat</div>
-      </button>
-      <button class="item">
-        <img src="images/bell.svg" alt="Feed" class="item__image" />
-        <div class="item__text">Notices</div>
-      </button>
-      <div class="search-form">
-        <img src="images/search.svg" alt="Поиск" class="search-form__image" />
-        <input type="search" placeholder="Search" class="search-form__input" />
+      <div class="container">
+        <button class="item margin-left-14">
+          <img src="images/rss.svg" alt="Feed" class="item__image" />
+          <div class="item__text">Feed</div>
+        </button>
+        <button class="item">
+          <img src="images/users.svg" alt="Network" class="item__image" />
+          <div class="item__text">Network</div>
+        </button>
+        <button class="item">
+          <img src="images/briefcase.svg" alt="Job" class="item__image" />
+          <div class="item__text">Jobs</div>
+        </button>
+        <button class="item">
+          <img src="images/message-square.svg" alt="Feed" class="item__image" />
+          <div class="item__text">Chat</div>
+        </button>
+        <button class="item">
+          <img src="images/bell.svg" alt="Feed" class="item__image" />
+          <div class="item__text">Notices</div>
+        </button>
+        <div class="search-form">
+          <img src="images/search.svg" alt="Поиск" class="search-form__image" />
+          <input
+            type="search"
+            placeholder="Search"
+            class="search-form__input"
+          />
+        </div>
+        <div class="profile">
+          <div class = "c-profile-flex">
+            <img
+            src="Images/Rectangle.jpg"
+            alt="Profile photo"
+            class="profile__image"
+          />
+          <div class="profile-data">
+            <div class="profile-data-personal">
+              D. Kargaev<span class="profile-data__pointer">You</span>
+            </div>
+            <div class="profile-raitings">
+              <span class="profile-raitings__views">367 views today</span>
+              <span class="profile-raitings__number">+32</span>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
-      <div class="profile">
-        <div class="profile__image"></div>
-      </div>
-      <div class="other">
+      <button class="other item">
         <div class="other__text"></div>
-      </div>
+      </button>
     </div>
     <div class="main">
       <div class="content">
-        <div class="information"></div>
+        <div class="information">
+          <div class = "tools">
+            <button class = "upload-button"><img src="Images/upload.svg" alt="" class = "upload-button__image"></button>
+            <div class = "buttons-options">
+              <button class = "edit-button">Edit profile</button>
+              <button class = "options-button"></button>
+            </div>
+          </div>
+          <div class = "main-inf">
+              <img src="Images/Ellipse.svg" alt="Profile photo" class = "main-inf__photo">
+              <div class = "contact-inf">
+                <div class = "contact-inf-top">
+                  <div class = "contact-inf-top-left">
+                    <div class = "contact-inf-top__name">Dmitry Kargaev</div>
+                    <img src="Images/Logo (2).svg" alt="Logo" class = "contact-inf-top__logo">
+                  </div>
+                  <div class = "contact-inf-top-right">
+                    <img src="Images/navigation.svg" alt="" class = "contact-inf-top__location-img">
+                    <div class = "contact-inf-top__location">Saint Petersburg, Russian Federation</div>
+                  </div>
+                </div>
+                <div class = "contact-description">Freelance UX/UI designer, 80+ projects in web design, mobile apps (iOS & android) and creative projects. Open to offers.</div>
+              <div class = "contact-options">
+                <button class = "contact-options__info">Contact info</button>
+                <button class = "contact-options__connections">1,043 connections</button>
+              </div>
+              </div>
+          </div>
+        </div>
         <div class="tabs">
           <div class="button-container">
             <button class="section-button">Profile</button>
@@ -58,7 +108,7 @@
           </div>
         </div>
         <div class="about">
-          <h2 class="about__title">About</h2>
+          <span class="about__title">About</span>
           <div class="about__text">
             I'm more experienced in eCommerce web projects and mobile banking
             apps, but also like to work with creative projects, such as landing
@@ -67,17 +117,22 @@
           <a href="" class="link">See more</a>
         </div>
         <div class="projects">
-          <h2 class="projects__title">Projects</h2>
-          <div class="projects__numbers">3 of 12</div>
+          <div class="projects-container">
+            <span class="projects__title">Projects</span>
+            <div class="projects__numbers">3 of 12</div>
+          </div>
           <div class="projects-examples">
             <div class="example-project">
               <img
                 src="Images/ext.svg"
                 alt="Zara"
                 class="example-project__image"
-              />
-              <h3 class="example-project__header">Zara redesign concept</h3>
-              UX/UI design, 15.07.2019
+              /><span class="example-project__header"
+                >Zara redesign concept</span
+              >
+              <span class="example-project__description"
+                >UX/UI design, 15.07.2019</span
+              >
             </div>
             <div class="example-project">
               <img
@@ -85,10 +140,12 @@
                 alt="SCTHON"
                 class="example-project__image"
               />
-              <h3 class="example-project__header">
+              <span class="example-project__header">
                 SCTHON event brand identity
-              </h3>
-              Graphic design, 03.31.2019
+              </span>
+              <span class="example-project__description"
+              >Graphic design, 03.31.2019</span
+            >
             </div>
             <div class="example-project">
               <img
@@ -96,19 +153,21 @@
                 alt="Drozd"
                 class="example-project__image"
               />
-              <h3 class="example-project__header">
+              <span class="example-project__header">
                 Drozd. Brand identity. 2016
-              </h3>
-              Graphic design, 03.04.2019
+              </span>
+              <span class="example-project__description"
+              >Graphic design, 03.04.2019</span
+            >
             </div>
           </div>
           <a href="" class="link">Show all (12)</a>
         </div>
         <div class="skills">
-          <h2 class="skills__title">Skills & Endoresments</h2>
+          <span class="skills__title">Skills & Endoresments</span>
           <div class="skills-examples">
             <div class="skill">
-              <h3 class="skill__header">User experience (UX)</h3>
+              <span class="skill__header">User experience (UX)</span>
               <img src="Images/Photo.svg" alt="" class="skill__image" /><img
                 src="Images/Photo (1).svg"
                 alt=""
@@ -116,25 +175,63 @@
               />
             </div>
             <div class="skill">
-              <h3 class="skill__header">User interface (UI)</h3>
+              <span class="skill__header">User interface (UI)</span>
             </div>
             <div class="skill">
-              <h3 class="skill__header">Brand identity</h3>
+              <span class="skill__header">Brand identity</span>
             </div>
           </div>
           <a href="" class="link">Show all (17)</a>
         </div>
         <div class="experience">
-          <h2 class="experience__title">Experience</h2>
-          <div class="experience-content">
+          <span class="experience__title">Experience</span>
+          <div class="experience-content margin-bottom-25">
             <img
               src="Images/Rectangle 2.2.svg"
               alt="Company logo"
               class="experience-content__image"
             />
-            <h3 class="experience-content__title">Freelance UX/UI designer</h3>
+            <img
+            src="Images/globe.svg"
+            alt="Company logo"
+            class="experience-content__globe"
+          />
+            <div class = "experience-description">
+              <div class="experience-content__title">Freelance UX/UI designer</div>
+              <div class = "experience-company">
+                <div class = "experience-company__name">Self Employed</div>
+                <div class = "experience-company__country">Around the world</div>
+              </div>
+              <div class = "experience-duration">
+                <div class = "experience-duration__years">Jun 2016 — Present</div>
+                <div class = "expericence-duration__summ">3 yrs 3 mos</div>
+              </div>
+              <div class = "experience-about">
+                Work with clients and web studios as freelancer. Work in next areas: eCommerce web projects; creative landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.
+              </div>
+            </div>
           </div>
-          <hr class="line" />
+          <div class="experience-content border-top">
+            <img
+              src="Images/Rectangle 2.2 (4).svg"
+              alt="Company logo"
+              class="experience-content__image"
+            />
+            <div class = "experience-description">
+              <div class="experience-content__title">UX/UI designer</div>
+              <div class = "experience-company">
+                <div class = "experience-company__name">Upwork</div>
+                <div class = "experience-company__country">International</div>
+              </div>
+              <div class = "experience-duration">
+                <div class = "experience-duration__years">Jun 2019 — Present</div>
+                <div class = "expericence-duration__summ">3 mos</div>
+              </div>
+              <div class = "experience-about">
+                New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design, UX research.
+              </div>
+            </div>
+          </div>
         </div>
         <div class="education">
           <span class="education__title">Education</span>
@@ -152,7 +249,7 @@
                 Bachelor's degree Field Of StudyComputer and Information Systems
                 Security/Information Assurance
               </p>
-              <p class="education-description__years">2013-2017</p>
+              <p class="education-description__years">2013 — 2017</p>
               <p class="education-description__add-courses">
                 Additional English classes and UX profile courses​.
               </p>
@@ -186,7 +283,6 @@
             <div class="sidebar-headers">Visitors</div>
             <a href="" class="link">View all</a>
           </div>
-          <hr class="line" />
           <div class="visitors-pages">
             <div class="page">
               <img
@@ -246,8 +342,7 @@
           </div>
         </div>
         <div class="courses">
-          <div class="sidebar-headers">You may like these courses</div>
-          <hr class="line" />
+          <div class="sidebar-headers display-block">You may like these courses</div>
           <div class="variants">
             <div class="course">
               <div class="course-screen">
@@ -268,22 +363,36 @@
               </div>
             </div>
             <div class="course">
-              <img
-                src="Images/Photo (8).svg"
-                alt="Course preview"
-                class="course__image"
-              />
+              <div class="course-screen">
+                <img
+                  src="Images/Photo (8).svg"
+                  alt="Course preview"
+                  class="course-screen__image"
+                />
+                <img
+                  src="Images/Rectangle 2.2 (1).svg"
+                  alt="Play"
+                  class="course-screen__play"
+                />
+              </div>
               <div class="course-description">
                 <h3 class="course__name">Designing with Adobe XD and pro</h3>
                 <div class="course__viewers">9,122 viewers</div>
               </div>
             </div>
             <div class="course">
-              <img
-                src="Images/Photo (9).svg"
-                alt="Course preview"
-                class="course__image"
-              />
+              <div class="course-screen">
+                <img
+                  src="Images/Photo (9).svg"
+                  alt="Course preview"
+                  class="course-screen__image"
+                />
+                <img
+                  src="Images/Rectangle 2.2 (1).svg"
+                  alt="Play"
+                  class="course-screen__play"
+                />
+              </div>
               <div class="course-description">
                 <h3 class="course__name">UX Foundations: Styles and GUIs</h3>
                 <div class="course__viewers">13,858 viewers</div>
@@ -300,7 +409,7 @@
           <img
             src="Images/Logo (1).svg"
             alt="Logo"
-            class="footer=logo__image"
+            class="footer-logo__image"
           />
           <div class="footer-logo__name">
             Linked<span class="two-letters">In</span>
