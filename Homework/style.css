@@ -1,33 +1,83 @@
 @font-face {
   font-family: "Gotham Pro";
   src: url("../fonts/GothamPro/GothamPro.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?l666bd');
+  src:  url('fonts/icomoon.eot?l666bd#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?l666bd') format('truetype'),
+    url('fonts/icomoon.woff?l666bd') format('woff'),
+    url('fonts/icomoon.svg?l666bd#icomoon') format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
+  font-display: block;
 }
 
-@font-face {
-  font-family: "Gotham Pro";
-  src: url("../fonts/GothamPro/GothamPro-Italic.woff") format("woff");
-  font-style: italic;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gotham Pro";
-  src: url("../fonts/GothamPro/GothamPro-Bold.woff") format("woff");
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
   font-style: normal;
-  font-weight: 700;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: "Gotham Pro";
-  src: url("../fonts/GothamPro/GothamPro-BoldItalic.woff") format("woff");
-  font-style: italic;
-  font-weight: 700;
+.icon-help-circle:before {
+  content: "\e905";
 }
+.icon-more-horizontal-1:before {
+  content: "\e903";
+}
+.icon-users:before {
+  content: "\e90c";
+}
+.icon-settings:before {
+  content: "\e900";
+}
+.icon-rss:before {
+  content: "\e901";
+}
+.icon-more-horizontal-2:before {
+  content: "\e902";
+}
+.icon-message-square:before {
+  content: "\e904";
+}
+.icon-edit:before {
+  content: "\e906";
+}
+.icon-count .path1:before {
+  content: "\e907";
+  color: rgb(0, 0, 0);
+}
+.icon-count .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-briefcase:before {
+  content: "\e909";
+}
+.icon-bell:before {
+  content: "\e90a";
+}
+.icon-arrow-up-right:before {
+  content: "\e90b";
+  color: #02b033;
+}
+
 
 body {
   background: #f7f9fb;
+  font-family: "Gotham Pro";
   margin: 0;
 }
 
@@ -66,28 +116,27 @@ body {
   width: 90px;
 }
 
-.item:hover {
-  background: #e5e5e5;
-}
-
 .margin-left-14 {
   margin-left: 14px;
 }
 
 .item__image {
-  height: 24px;
+  display: block;
+  font-size: 24px;
   margin-bottom: 10px;
   margin-top: 18px;
-  width: 24px;
 }
 
 .item__text {
   color: #181818;
-  font-family: "Gotham Pro";
   font-size: 12px;
   font-weight: 700;
   line-height: 11px;
   text-transform: uppercase;
+}
+
+.item__text:active {
+  color: #0275b1;
 }
 
 .search-form {
@@ -110,7 +159,6 @@ body {
 .search-form__input {
   border: none;
   color: #cecece;
-  font-family: "Gotham Pro";
   font-size: 16px;
   height: 16px;
 }
@@ -139,10 +187,9 @@ body {
 }
 
 .profile-data {
-  font-family: "Gotham Pro";
   height: 33px;
   margin-top: 6px;
-  width: 135px;
+  width: 138px;
 }
 
 .profile-data-personal {
@@ -170,17 +217,30 @@ body {
   color: rgba(24, 24, 24, 0.2);
 }
 
+.profile-raitings {
+  display: flex;
+}
+
 .profile-raitings__views {
+  display: block;
   font-size: 12px;
   line-height: 11px;
   color: #747474;
 }
 
 .profile-raitings__number {
+  display: block;
   font-size: 12px;
+  font-weight: 700;
   line-height: 11px;
   margin-left: 4px;
   color: #02b033;
+}
+
+.icon-arrow-up-right {
+  display: block;
+  font-size: 12px;
+  margin-left: 2px;
 }
 
 .other {
@@ -192,7 +252,6 @@ body {
 
 .other__text {
   color: #181818;
-  font-family: "Gotham Pro";
   font-size: 12px;
   line-height: 11px;
   text-transform: uppercase;
@@ -259,15 +318,19 @@ body {
 }
 
 .edit-button {
+  align-items: center;
+  display: flex;
   width: 132px;
   height: 36px;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
   border: none;
   border-radius: 4px;
-  font-family: "Gotham Pro";
+  box-sizing: border-box;
   font-size: 12px;
   line-height: 11px;
+  padding-right: 11px;
+  padding-left: 9.69px;
   text-align: center;
   text-transform: uppercase;
   color: #181818;
@@ -277,6 +340,12 @@ body {
   background: #e5e5e5;
 }
 
+.icon-edit {
+  display: block;
+  font-size: 16px;
+  margin-right: 8.31px;
+}
+
 .options-button {
   height: 36px;
   width: 36px;
@@ -284,6 +353,10 @@ body {
   box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
   border: none;
   border-radius: 4px;
+}
+
+.icon-more-horizontal-2 {
+  font-size: 24px;
 }
 
 .main-inf {
@@ -317,7 +390,7 @@ body {
 .contact-inf-top__name {
   font-family: Gotham Pro;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 17px;
   margin-right: 8px;
   color: #181818;
@@ -339,14 +412,12 @@ body {
 }
 
 .contact-inf-top__location {
-  font-family: "Gotham Pro";
   font-size: 12px;
   line-height: 150%;
   color: #181818;
 }
 
 .contact-description {
-  font-family: Gotham Pro;
   font-size: 14px;
   line-height: 150%;
   margin-bottom: 14px;
@@ -359,47 +430,29 @@ body {
   display: flex;
 }
 
+.contact-buttons {
+  background: #fff;
+  border: 1px solid #0275b1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #0275b1;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  height: 32px;
+  line-height: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 170px;
+}
+
+.contact-buttons:hover {
+  background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+  color: #fff;
+}
+
 .contact-options__info {
-  background: #ffffff;
-  border: 1px solid #0275b1;
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 170px;
   margin-right: 15px;
-  height: 32px;
-  font-family: "Gotham Pro";
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 11px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #0275b1;
-}
-
-.contact-options__info:hover {
-  background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
-  color: #ffffff;
-}
-
-.contact-options__connections {
-  background: #ffffff;
-  border: 1px solid #0275b1;
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 170px;
-  height: 32px;
-  font-family: "Gotham Pro";
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 11px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #0275b1;
-}
-
-.contact-options__connections:hover {
-  background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
-  color: #ffffff;
 }
 
 .tabs {
@@ -421,7 +474,6 @@ body {
   height: 40px;
   background-color: #fff;
   border: 1px solid #e7e7e7;
-  font-family: "Gotham Pro";
   font-size: 12px;
   font-weight: 700;
   line-height: 11px;
@@ -444,7 +496,6 @@ body {
 .about {
   background-color: #fff;
   box-sizing: border-box;
-  font-family: "Gotham Pro";
   height: 170px;
   padding-left: 30px;
   padding-right: 30px;
@@ -483,7 +534,6 @@ body {
 .projects {
   background-color: #fff;
   box-sizing: border-box;
-  font-family: "Gotham Pro";
   height: 355px;
   padding-left: 30px;
   padding-top: 30px;
@@ -548,7 +598,6 @@ body {
 .skills {
   background-color: #fff;
   box-sizing: border-box;
-  font-family: "Gotham Pro";
   height: 220px;
   padding-left: 30px;
   padding-top: 30px;
@@ -589,19 +638,40 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
-  margin-top: 0px;
   margin-bottom: 5px;
 }
 
-.skill__image {
+.skill-customer{
+  position: relative;
+  width: 99px;
+  height: 24px;
+}
+
+.skill-customer__image {
+  position: absolute;
   height: 24px;
   width: 24px;
+}
+
+.margin-left-15{
+  margin-left: 15px;
+}
+
+.margin-left-30{
+  margin-left: 30px;
+}
+
+.margin-left-45-2{
+  margin-left: 45px;
+}
+
+.margin-left-75{
+  margin-left: 75px;
 }
 
 .experience {
   background-color: #fff;
   box-sizing: border-box;
-  font-family: "Gotham Pro";
   height: 345px;
   padding-left: 30px;
   padding-top: 30px;
@@ -631,7 +701,7 @@ body {
   width: 54px;
 }
 
-.experience-content__globe{
+.experience-content__globe {
   height: 32px;
   left: 11px;
   position: absolute;
@@ -697,7 +767,6 @@ body {
 .education {
   background-color: #fff;
   box-sizing: border-box;
-  font-family: "Gotham Pro";
   height: 195px;
   padding-left: 30px;
   padding-top: 30px;
@@ -767,7 +836,6 @@ body {
   background-color: #f7f9fb;
   display: flex;
   flex-direction: column;
-  font-family: "Gotham Pro";
   height: 1165px;
   justify-content: space-between;
   width: 290px;
@@ -783,7 +851,7 @@ body {
 
 .sidebar-headers {
   color: #181818;
-  display: inline-block;
+  display: block;
   font-size: 12px;
   line-height: 11px;
   margin-bottom: 20px;
@@ -804,24 +872,27 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  height: 294px;
+  height: 274px;
   justify-content: space-between;
-  padding-bottom: 20px;
   padding-top: 20px;
 }
 
 .statistics-indicator {
-  color: #181818;
-  font-size: 14px;
-  line-height: 21px;
+  height: 71px;
 }
 
 .statistics__numbers {
   color: #0275b1;
   font-size: 52px;
-  font-weight: 550;
+  font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
+}
+
+.statistics__text{
+  color: #181818;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .visitors {
@@ -861,6 +932,7 @@ body {
 .page__name {
   color: #181818;
   font-size: 14px;
+  font-weight: 700;
   line-height: 13px;
   margin-bottom: 5px;
   margin-top: 12px;
@@ -910,9 +982,17 @@ body {
   width: 80px;
 }
 
-.course-screen__play {
+.course-screen__play-back {
   display: block;
   left: 31px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.course-screen__play {
+  display: block;
+  left: 36px;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -927,6 +1007,7 @@ body {
 .course__name {
   color: #181818;
   font-size: 14px;
+  font-weight: 700;
   height: 36px;
   line-height: 17px;
   margin-bottom: 0px;
@@ -972,7 +1053,6 @@ body {
 
 .footer-logo__name {
   color: #181818;
-  font-family: "Gotham Pro";
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
@@ -986,7 +1066,6 @@ body {
   display: flex;
   color: #181818;
   flex-direction: column;
-  font-family: "Gotham Pro";
   font-size: 12px;
   justify-content: space-between;
   line-height: 11px;
@@ -1018,7 +1097,6 @@ body {
 
 .footer-section {
   color: #181818;
-  font-family: "Gotham Pro";
   font-size: 12px;
   font-weight: 700;
   line-height: 11px;
@@ -1030,7 +1108,6 @@ body {
 
 .nav-links__text {
   color: #181818;
-  font-family: "Gotham Pro";
   font-size: 12px;
   line-height: 11px;
 }
@@ -1041,16 +1118,21 @@ body {
 }
 
 .fast-access__button {
+  align-items: center;
   background-color: #f7f9fb;
   border: 1px solid #0275b1;
   border-radius: 4px;
   box-sizing: border-box;
   color: #0275b1;
-  font-family: "Gotham Pro";
+  display: flex;
   font-size: 12px;
+  font-weight: 700;
   height: 32px;
+  justify-content: space-between;
   line-height: 11px;
   margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-transform: uppercase;
   width: 170px;
 }
@@ -1058,6 +1140,15 @@ body {
 .fast-access__button:hover {
   background-color: #0275b1;
   color: #f7f9fb;
+}
+
+.icon-help-circle{
+  color: #0275b1; 
+  font-size: 16px;
+}
+
+.icon-settings{
+  font-size: 16px;
 }
 
 .margin-left-65 {
@@ -1078,17 +1169,28 @@ body {
 }
 
 .lang-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: #fff;
+  background-image: url(Images/chevron-down.svg);
+  background-position-x: 241px;
+  background-position-y: 9px;
+  background-repeat: no-repeat;
   border: 1px solid #f0f0f0;
   border-radius: 4px;
   box-sizing: border-box;
   color: #181818;
-  font-family: "Gotham Pro";
   font-size: 12px;
+  font-weight: 700;
   height: 32px;
   line-height: 11px;
   padding-left: 15px;
   padding-right: 14.25px;
   text-transform: uppercase;
   width: 270px;
+}
+
+.lang-select:focus {
+  outline: none;
 }

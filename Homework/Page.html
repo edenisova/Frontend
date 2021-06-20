@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <title>Frontend</title>
   </head>
   <body>
@@ -15,23 +14,28 @@
       </div>
       <div class="container">
         <button class="item margin-left-14">
-          <img src="images/rss.svg" alt="Feed" class="item__image" />
+          <!--<img src="images/rss.svg" alt="Feed" class="item__image" />-->
+          <span class="icon-rss item__image"></span>
           <div class="item__text">Feed</div>
         </button>
         <button class="item">
-          <img src="images/users.svg" alt="Network" class="item__image" />
+          <!-- <img src="images/users.svg" alt="Network" class="item__image" />-->
+          <span class="icon-users item__image"></span>
           <div class="item__text">Network</div>
         </button>
         <button class="item">
-          <img src="images/briefcase.svg" alt="Job" class="item__image" />
+          <!--<img src="images/briefcase.svg" alt="Job" class="item__image" />-->
+          <span class="icon-briefcase item__image"></span>
           <div class="item__text">Jobs</div>
         </button>
         <button class="item">
-          <img src="images/message-square.svg" alt="Feed" class="item__image" />
+          <!--<img src="images/message-square.svg" alt="Feed" class="item__image" />-->
+          <span class="icon-message-square item__image"></span>
           <div class="item__text">Chat</div>
         </button>
         <button class="item">
-          <img src="images/bell.svg" alt="Feed" class="item__image" />
+          <!--<img src="images/bell.svg" alt="Feed" class="item__image" />-->
+          <span class="icon-bell item__image"></span>
           <div class="item__text">Notices</div>
         </button>
         <div class="search-form">
@@ -43,57 +47,92 @@
           />
         </div>
         <div class="profile">
-          <div class = "c-profile-flex">
+          <div class="c-profile-flex">
             <img
-            src="Images/Rectangle.jpg"
-            alt="Profile photo"
-            class="profile__image"
-          />
-          <div class="profile-data">
-            <div class="profile-data-personal">
-              D. Kargaev<span class="profile-data__pointer">You</span>
+              src="Images/Rectangle.jpg"
+              alt="Profile photo"
+              class="profile__image"
+            />
+            <div class="profile-data">
+              <div class="profile-data-personal">
+                D. Kargaev<span class="profile-data__pointer">You</span>
+              </div>
+              <div class="profile-raitings">
+                <span class="profile-raitings__views">367 views today</span>
+                <span class="profile-raitings__number">+32</span>
+                <span class="icon-arrow-up-right"></span>
+              </div>
             </div>
-            <div class="profile-raitings">
-              <span class="profile-raitings__views">367 views today</span>
-              <span class="profile-raitings__number">+32</span>
-            </div>
-          </div>
           </div>
         </div>
       </div>
       <button class="other item">
-        <div class="other__text"></div>
+        <!--<img src="Images/more-horizontal.svg" alt="" class = "item__image">-->
+        <span class="icon-more-horizontal-1 item__image"></span>
+        <div class="item__text">Other</div>
       </button>
     </div>
     <div class="main">
       <div class="content">
         <div class="information">
-          <div class = "tools">
-            <button class = "upload-button"><img src="Images/upload.svg" alt="" class = "upload-button__image"></button>
-            <div class = "buttons-options">
-              <button class = "edit-button">Edit profile</button>
-              <button class = "options-button"></button>
+          <div class="tools">
+            <button class="upload-button">
+              <img
+                src="Images/upload.svg"
+                alt=""
+                class="upload-button__image"
+              />
+            </button>
+            <div class="buttons-options">
+              <button class="edit-button">
+                <span class="icon-edit"></span>
+                <div>Edit profile</div>
+              </button>
+              <button class="options-button">
+                <span class="icon-more-horizontal-2"></span>
+              </button>
             </div>
           </div>
-          <div class = "main-inf">
-              <img src="Images/Ellipse.svg" alt="Profile photo" class = "main-inf__photo">
-              <div class = "contact-inf">
-                <div class = "contact-inf-top">
-                  <div class = "contact-inf-top-left">
-                    <div class = "contact-inf-top__name">Dmitry Kargaev</div>
-                    <img src="Images/Logo (2).svg" alt="Logo" class = "contact-inf-top__logo">
-                  </div>
-                  <div class = "contact-inf-top-right">
-                    <img src="Images/navigation.svg" alt="" class = "contact-inf-top__location-img">
-                    <div class = "contact-inf-top__location">Saint Petersburg, Russian Federation</div>
+          <div class="main-inf">
+            <img
+              src="Images/Ellipse.svg"
+              alt="Profile photo"
+              class="main-inf__photo"
+            />
+            <div class="contact-inf">
+              <div class="contact-inf-top">
+                <div class="contact-inf-top-left">
+                  <div class="contact-inf-top__name">Dmitry Kargaev</div>
+                  <img
+                    src="Images/Logo (2).svg"
+                    alt="Logo"
+                    class="contact-inf-top__logo"
+                  />
+                </div>
+                <div class="contact-inf-top-right">
+                  <img
+                    src="Images/navigation.svg"
+                    alt=""
+                    class="contact-inf-top__location-img"
+                  />
+                  <div class="contact-inf-top__location">
+                    Saint Petersburg, Russian Federation
                   </div>
                 </div>
-                <div class = "contact-description">Freelance UX/UI designer, 80+ projects in web design, mobile apps (iOS & android) and creative projects. Open to offers.</div>
-              <div class = "contact-options">
-                <button class = "contact-options__info">Contact info</button>
-                <button class = "contact-options__connections">1,043 connections</button>
               </div>
+              <div class="contact-description">
+                Freelance UX/UI designer, 80+ projects in web design, mobile
+                apps (iOS & android) and creative projects. Open to offers.
               </div>
+              <div class="contact-options">
+                <button class="contact-options__info contact-buttons">
+                  Contact info
+                </button>
+                <button class="contact-options__connections contact-buttons">
+                  1,043 connections
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="tabs">
@@ -144,8 +183,8 @@
                 SCTHON event brand identity
               </span>
               <span class="example-project__description"
-              >Graphic design, 03.31.2019</span
-            >
+                >Graphic design, 03.31.2019</span
+              >
             </div>
             <div class="example-project">
               <img
@@ -157,8 +196,8 @@
                 Drozd. Brand identity. 2016
               </span>
               <span class="example-project__description"
-              >Graphic design, 03.04.2019</span
-            >
+                >Graphic design, 03.04.2019</span
+              >
             </div>
           </div>
           <a href="" class="link">Show all (12)</a>
@@ -168,17 +207,100 @@
           <div class="skills-examples">
             <div class="skill">
               <span class="skill__header">User experience (UX)</span>
-              <img src="Images/Photo.svg" alt="" class="skill__image" /><img
-                src="Images/Photo (1).svg"
-                alt=""
-                class="skill__image"
-              />
+              <div class="skill-customer">
+                <img
+                  src="Images/Photo.svg"
+                  alt=""
+                  class="skill-customer__image"
+                /><img
+                  src="Images/Photo (1).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-15"
+                />
+                <img
+                  src="Images/Photo (10).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-30"
+                />
+                <img
+                  src="Images/Photo (11).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-45-2"
+                />
+                <img
+                  src="Images/Photo (12).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-60"
+                />
+                <img
+                  src="Images/count (1).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-75"
+                />
+              </div>
             </div>
             <div class="skill">
               <span class="skill__header">User interface (UI)</span>
+              <div class="skill-customer">
+                <img
+                  src="Images/Photo (13).svg"
+                  alt=""
+                  class="skill-customer__image"
+                /><img
+                  src="Images/Photo (1).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-15"
+                />
+                <img
+                  src="Images/Photo (14).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-30"
+                />
+                <img
+                  src="Images/Photo (15).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-45-2"
+                />
+                <img
+                  src="Images/Photo (12).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-60"
+                />
+                <img
+                  src="Images/count (2).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-75"
+                />
+              </div>
             </div>
             <div class="skill">
               <span class="skill__header">Brand identity</span>
+              <div class="skill-customer">
+                <img
+                  src="Images/Photo (16).svg"
+                  alt=""
+                  class="skill-customer__image"
+                /><img
+                  src="Images/Photo.svg"
+                  alt=""
+                  class="skill-customer__image margin-left-15"
+                />
+                <img
+                  src="Images/Photo (11).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-30"
+                />
+                <img
+                  src="Images/Photo (10).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-45-2"
+                />
+                <img
+                  src="Images/Photo (17).svg"
+                  alt=""
+                  class="skill-customer__image margin-left-60"
+                />
+              </div>
             </div>
           </div>
           <a href="" class="link">Show all (17)</a>
@@ -192,22 +314,27 @@
               class="experience-content__image"
             />
             <img
-            src="Images/globe.svg"
-            alt="Company logo"
-            class="experience-content__globe"
-          />
-            <div class = "experience-description">
-              <div class="experience-content__title">Freelance UX/UI designer</div>
-              <div class = "experience-company">
-                <div class = "experience-company__name">Self Employed</div>
-                <div class = "experience-company__country">Around the world</div>
+              src="Images/globe.svg"
+              alt="Company logo"
+              class="experience-content__globe"
+            />
+            <div class="experience-description">
+              <div class="experience-content__title">
+                Freelance UX/UI designer
               </div>
-              <div class = "experience-duration">
-                <div class = "experience-duration__years">Jun 2016 — Present</div>
-                <div class = "expericence-duration__summ">3 yrs 3 mos</div>
+              <div class="experience-company">
+                <div class="experience-company__name">Self Employed</div>
+                <div class="experience-company__country">Around the world</div>
               </div>
-              <div class = "experience-about">
-                Work with clients and web studios as freelancer. Work in next areas: eCommerce web projects; creative landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.
+              <div class="experience-duration">
+                <div class="experience-duration__years">Jun 2016 — Present</div>
+                <div class="expericence-duration__summ">3 yrs 3 mos</div>
+              </div>
+              <div class="experience-about">
+                Work with clients and web studios as freelancer. Work in next
+                areas: eCommerce web projects; creative landing pages; iOs and
+                Android apps; corporate web sites and corporate identity
+                sometimes.
               </div>
             </div>
           </div>
@@ -217,18 +344,19 @@
               alt="Company logo"
               class="experience-content__image"
             />
-            <div class = "experience-description">
+            <div class="experience-description">
               <div class="experience-content__title">UX/UI designer</div>
-              <div class = "experience-company">
-                <div class = "experience-company__name">Upwork</div>
-                <div class = "experience-company__country">International</div>
+              <div class="experience-company">
+                <div class="experience-company__name">Upwork</div>
+                <div class="experience-company__country">International</div>
               </div>
-              <div class = "experience-duration">
-                <div class = "experience-duration__years">Jun 2019 — Present</div>
-                <div class = "expericence-duration__summ">3 mos</div>
+              <div class="experience-duration">
+                <div class="experience-duration__years">Jun 2019 — Present</div>
+                <div class="expericence-duration__summ">3 mos</div>
               </div>
-              <div class = "experience-about">
-                New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design, UX research.
+              <div class="experience-about">
+                New experience with Upwork system. Work in next areas: UX/UI
+                design, graphic design, interaction design, UX research.
               </div>
             </div>
           </div>
@@ -237,7 +365,7 @@
           <span class="education__title">Education</span>
           <div class="education-content">
             <img
-              src="Images/Rectangle 2.2 (2).svg"
+              src="Images/Rectangle 2.2(1).svg"
               alt=""
               class="education-content__logo"
             />
@@ -266,7 +394,7 @@
           <div class="statistics">
             <div class="statistics-indicator">
               <div class="statistics__numbers">367</div>
-              views today
+              <div class = "statictics__text">views today</div>
             </div>
             <div class="statistics-indicator">
               <div class="statistics__numbers">15</div>
@@ -291,7 +419,7 @@
                 class="page__image"
               />
               <div class="page__text">
-                <h3 class="page__name">Darlene Black</h3>
+                <div class="page__name">Darlene Black</div>
                 HR-manager, 10 000 connections,
               </div>
             </div>
@@ -302,7 +430,7 @@
                 class="page__image"
               />
               <div class="page__text">
-                <h3 class="page__name">Theresa Steward</h3>
+                <div class="page__name">Theresa Steward</div>
                 iOS developer
               </div>
             </div>
@@ -313,7 +441,7 @@
                 class="page__image"
               />
               <div class="page__text">
-                <h3 class="page__name">Brandon Wilson</h3>
+                <div class="page__name">Brandon Wilson</div>
                 Senior UX designer
               </div>
             </div>
@@ -324,7 +452,7 @@
                 class="page__image"
               />
               <div class="page__text">
-                <h3 class="page__name">Kyle Fisher</h3>
+                <div class="page__name">Kyle Fisher</div>
                 Product designer at Corporation
               </div>
             </div>
@@ -335,14 +463,16 @@
                 class="page__image"
               />
               <div class="page__text">
-                <h3 class="page__name">Audrey Alexander</h3>
+                <div class="page__name">Audrey Alexander</div>
                 Team lead at Google
               </div>
             </div>
           </div>
         </div>
         <div class="courses">
-          <div class="sidebar-headers display-block">You may like these courses</div>
+          <div class="sidebar-headers display-block">
+            You may like these courses
+          </div>
           <div class="variants">
             <div class="course">
               <div class="course-screen">
@@ -354,11 +484,12 @@
                 <img
                   src="Images/Rectangle 2.2 (1).svg"
                   alt="Play"
-                  class="course-screen__play"
+                  class="course-screen__play-back"
                 />
+                <img src="Images/play.svg" alt="" class="course-screen__play" />
               </div>
               <div class="course-description">
-                <h3 class="course__name">UX Foundations: Prototyping</h3>
+                <div class="course__name">UX Foundations: Prototyping</div>
                 <div class="course__viewers">27,959 viewers</div>
               </div>
             </div>
@@ -372,11 +503,12 @@
                 <img
                   src="Images/Rectangle 2.2 (1).svg"
                   alt="Play"
-                  class="course-screen__play"
+                  class="course-screen__play-back"
                 />
+                <img src="Images/play.svg" alt="" class="course-screen__play" />
               </div>
               <div class="course-description">
-                <h3 class="course__name">Designing with Adobe XD and pro</h3>
+                <div class="course__name">Designing with Adobe XD and pro</div>
                 <div class="course__viewers">9,122 viewers</div>
               </div>
             </div>
@@ -390,11 +522,12 @@
                 <img
                   src="Images/Rectangle 2.2 (1).svg"
                   alt="Play"
-                  class="course-screen__play"
+                  class="course-screen__play-back"
                 />
+                <img src="Images/play.svg" alt="" class="course-screen__play" />
               </div>
               <div class="course-description">
-                <h3 class="course__name">UX Foundations: Styles and GUIs</h3>
+                <div class="course__name">UX Foundations: Styles and GUIs</div>
                 <div class="course__viewers">13,858 viewers</div>
               </div>
             </div>
@@ -435,8 +568,13 @@
         </div>
         <div class="fast-access margin-left-65">
           <div class="footer-section margin-bottom-23">Fast access</div>
-          <button class="fast-access__button">Questions?</button>
-          <button class="fast-access__button">Settings</button>
+          <button class="fast-access__button">
+            Questions?
+            <span class="icon-help-circle"></span>
+          </button>
+          <button class="fast-access__button">Settings
+            <span class = "icon-settings"></span>
+          </button>
         </div>
         <div class="lang margin-left-60">
           <div class="footer-section margin-bottom-23">Language</div>
