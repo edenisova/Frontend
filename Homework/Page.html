@@ -28,9 +28,13 @@
           <span class="icon-briefcase item__image"></span>
           <div class="item__text">Jobs</div>
         </button>
-        <button class="item">
+        <button class="item message-count">
           <!--<img src="images/message-square.svg" alt="Feed" class="item__image" />-->
           <span class="icon-message-square item__image"></span>
+          <span class="icon-count">
+            <span class="path1"></span>
+            <span class="path2"></span>
+          </span>
           <div class="item__text">Chat</div>
         </button>
         <button class="item">
@@ -146,8 +150,8 @@
             <button class="section-button round-border">Articles (3)</button>
           </div>
         </div>
-        <div class="about">
-          <span class="about__title">About</span>
+        <div class="about main-block">
+          <span class="main-title">About</span>
           <div class="about__text">
             I'm more experienced in eCommerce web projects and mobile banking
             apps, but also like to work with creative projects, such as landing
@@ -155,9 +159,9 @@
           </div>
           <a href="" class="link">See more</a>
         </div>
-        <div class="projects">
+        <div class="projects main-block">
           <div class="projects-container">
-            <span class="projects__title">Projects</span>
+            <span class="projects__title main-title">Projects</span>
             <div class="projects__numbers">3 of 12</div>
           </div>
           <div class="projects-examples">
@@ -202,11 +206,14 @@
           </div>
           <a href="" class="link">Show all (12)</a>
         </div>
-        <div class="skills">
-          <span class="skills__title">Skills & Endoresments</span>
+        <div class="skills main-block">
+          <span class="skills__title main-title">Skills & Endoresments</span>
           <div class="skills-examples">
             <div class="skill">
-              <span class="skill__header">User experience (UX)</span>
+              <div class="skill-header">
+                <span class="skill-header__name">User experience (UX)</span>
+                <span class="skill-header__number">6</span>
+              </div>
               <div class="skill-customer">
                 <img
                   src="Images/Photo.svg"
@@ -225,7 +232,7 @@
                 <img
                   src="Images/Photo (11).svg"
                   alt=""
-                  class="skill-customer__image margin-left-45-2"
+                  class="skill-customer__image margin-left-45"
                 />
                 <img
                   src="Images/Photo (12).svg"
@@ -240,7 +247,10 @@
               </div>
             </div>
             <div class="skill">
-              <span class="skill__header">User interface (UI)</span>
+              <div class="skill-header">
+                <span class="skill-header__name">User interface (UI)</span>
+                <span class="skill-header__number">7</span>
+              </div>
               <div class="skill-customer">
                 <img
                   src="Images/Photo (13).svg"
@@ -259,7 +269,7 @@
                 <img
                   src="Images/Photo (15).svg"
                   alt=""
-                  class="skill-customer__image margin-left-45-2"
+                  class="skill-customer__image margin-left-45"
                 />
                 <img
                   src="Images/Photo (12).svg"
@@ -274,7 +284,10 @@
               </div>
             </div>
             <div class="skill">
-              <span class="skill__header">Brand identity</span>
+              <div class="skill-header">
+                <span class="skill-header__name">Brand identity</span>
+                <span class="skill-header__number">5</span>
+              </div>
               <div class="skill-customer">
                 <img
                   src="Images/Photo (16).svg"
@@ -293,7 +306,7 @@
                 <img
                   src="Images/Photo (10).svg"
                   alt=""
-                  class="skill-customer__image margin-left-45-2"
+                  class="skill-customer__image margin-left-45"
                 />
                 <img
                   src="Images/Photo (17).svg"
@@ -305,8 +318,8 @@
           </div>
           <a href="" class="link">Show all (17)</a>
         </div>
-        <div class="experience">
-          <span class="experience__title">Experience</span>
+        <div class="experience main-block">
+          <span class="experience__title main-title">Experience</span>
           <div class="experience-content margin-bottom-25">
             <img
               src="Images/Rectangle 2.2.svg"
@@ -361,11 +374,11 @@
             </div>
           </div>
         </div>
-        <div class="education">
-          <span class="education__title">Education</span>
+        <div class="education main-block">
+          <span class="education__title main-title">Education</span>
           <div class="education-content">
             <img
-              src="Images/Rectangle 2.2(1).svg"
+              src="Images/Group.svg"
               alt=""
               class="education-content__logo"
             />
@@ -394,7 +407,7 @@
           <div class="statistics">
             <div class="statistics-indicator">
               <div class="statistics__numbers">367</div>
-              <div class = "statictics__text">views today</div>
+              <div class="statictics__text">views today</div>
             </div>
             <div class="statistics-indicator">
               <div class="statistics__numbers">15</div>
@@ -548,20 +561,20 @@
             Linked<span class="two-letters">In</span>
           </div>
         </div>
-        <div class="nav-links margin-left-69">
+        <div class="nav-links column-ml-69">
           <div class="footer-section margin-bottom-16">Navigation</div>
           <a class="nav-links__text">About</a>
           <a class="nav-links__text">Careers</a>
           <a class="nav-links__text">Advertising</a>
           <a class="nav-links__text">Small Business</a>
         </div>
-        <div class="nav-links margin-left-35">
+        <div class="nav-links column-ml-35">
           <a class="nav-links__text">Talent Solutions</a>
           <a class="nav-links__text">Marketing Solutions</a>
           <a class="nav-links__text">Sales Solutions</a>
           <a class="nav-links__text">Safery Center</a>
         </div>
-        <div class="nav-links margin-left-45">
+        <div class="nav-links column-ml-45">
           <a class="nav-links__text">Community Guidelines</a>
           <a class="nav-links__text">Privacy & Terms</a>
           <a class="nav-links__text">Mobile App</a>
@@ -570,10 +583,11 @@
           <div class="footer-section margin-bottom-23">Fast access</div>
           <button class="fast-access__button">
             Questions?
-            <span class="icon-help-circle"></span>
+            <span class="icon-help-circle fast-access__button-icon"></span>
           </button>
-          <button class="fast-access__button">Settings
-            <span class = "icon-settings"></span>
+          <button class="fast-access__button">
+            Settings
+            <span class="icon-settings fast-access__button-icon"></span>
           </button>
         </div>
         <div class="lang margin-left-60">
