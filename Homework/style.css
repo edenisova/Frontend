@@ -217,15 +217,6 @@ body {
   color: #181818;
 }
 
-.profile-data__name {
-  font-size: 12px;
-  display: inline-block;
-  margin: 0px;
-  line-height: 11px;
-  text-transform: uppercase;
-  color: #181818;
-}
-
 .profile-data__pointer {
   font-size: 12px;
   line-height: 11px;
@@ -291,7 +282,7 @@ body {
   width: 850px;
 }
 
-.main-block{
+.main-block {
   background-color: #fff;
   box-sizing: border-box;
   padding: 30px;
@@ -299,7 +290,7 @@ body {
 
 .information {
   background-color: #fff;
-  background-image: url(Images/Rectangle\ 3\(1\).svg);
+  background-image: url(Images/Rectangle\3\(1\).svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   height: 360px;
@@ -324,7 +315,6 @@ body {
 }
 
 .upload-button__image {
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -490,18 +480,18 @@ body {
 }
 
 .section-button {
-  position: absolute;
-  bottom: 0px;
-  width: 240px;
-  height: 40px;
   background-color: #fff;
   border: 1px solid #e7e7e7;
+  bottom: 0px;
+  color: #181818;
+  height: 40px;
   font-size: 12px;
   font-weight: 700;
   line-height: 11px;
+  position: absolute;
   text-align: center;
   text-transform: uppercase;
-  color: #181818;
+  width: 240px;
 }
 
 .section-button:hover {
@@ -611,7 +601,6 @@ body {
 
 .skills__title {
   display: block;
-  margin-top: 0px;
   margin-bottom: 24px;
 }
 
@@ -643,7 +632,6 @@ body {
   justify-content: space-between;
   line-height: 21px;
   margin-bottom: 5px;
-  vertical-align: top;
 }
 
 .skill-header__number {
@@ -684,7 +672,6 @@ body {
 
 .experience__title {
   display: block;
-  margin-top: 0px;
   margin-bottom: 5px;
 }
 
@@ -719,7 +706,6 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
-  margin-top: 0px;
   margin-bottom: 10px;
 }
 
@@ -752,7 +738,7 @@ body {
 
 .experience-about {
   font-size: 10px;
-  line-height: 150%;
+  line-height: 15px;
   color: #181818;
 }
 
@@ -770,7 +756,6 @@ body {
 
 .education__title {
   display: block;
-  margin-top: 0px;
   margin-bottom: 25px;
 }
 
@@ -789,6 +774,9 @@ body {
 }
 
 .education-description {
+  color: #181818;
+  font-size: 10px;
+  line-height: 15px;
   width: 501px;
 }
 
@@ -796,30 +784,20 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
-  color: #181818;
   margin-top: 0px;
   margin-bottom: 10px;
 }
 
 .education-description__degree {
-  font-size: 10px;
-  line-height: 15px;
-  color: #181818;
   margin-bottom: 5px;
 }
 
 .education-description__years {
-  font-size: 10px;
-  line-height: 15px;
-  color: #181818;
   margin-top: 0px;
   margin-bottom: 10px;
 }
 
 .education-description__add-courses {
-  font-size: 10px;
-  line-height: 15px;
-  color: #181818;
   margin: 0px;
 }
 
